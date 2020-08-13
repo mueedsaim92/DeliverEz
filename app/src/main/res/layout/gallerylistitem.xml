@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingConstraints,
+    UselessParent,RtlSymmetry,HardcodedText,TextFields
+    ,RelativeOverlap,Autofill,UseCompoundDrawables,LabelFor,ButtonStyle,ContentDescription">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/albumfileimage"
+             />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/albumfilename"
+            android:textColor="#FFF"
+            android:padding="10dp"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

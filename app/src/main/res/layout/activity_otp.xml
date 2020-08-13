@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_toolbar" />
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/otpViewLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="24dp"
+        android:gravity="center_horizontal"
+        >
+
+        <TextView
+            android:id="@+id/enterOtpTextTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="24dp"
+            android:gravity="center"
+            android:textColor="@color/textColor"
+            android:textSize="14sp"
+            android:visibility="gone"
+            />
+
+        <EditText
+            android:id="@+id/otpET"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:minWidth="120dp"
+            android:layout_marginTop="16dp"
+            android:hint="Enter OTP"
+            android:inputType="phone"
+            android:imeOptions="actionDone"
+            android:textColor="@color/textColor"
+            android:gravity="center"
+            android:background="@drawable/shape_rec_theame"
+            android:maxLength="6"
+            />
+        <TextView
+            android:id="@+id/timerTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            />
+
+        <!-- <LinearLayout
+             android:id="@+id/resendOtpLL"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:gravity="center"
+             android:orientation="vertical"
+             android:layout_marginTop="24dp"
+             android:visibility="gone"
+             >
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+                 android:text="@string/otp_TV1"
+                 />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Resend OTP"
+                 />
+
+         </LinearLayout>-->
+
+        <TextView
+            android:id="@+id/notRecieveMsgTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/otp_TV1"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/verifyAndUpdateBT"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Verify And Proceed"
+            android:textColor="@color/appWhite"
+            android:background="@drawable/shape_btn_round"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="12dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            />
+
+        <Button
+            android:id="@+id/resendBT"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/shape_btn_round"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Resend OTP"
+            android:textColor="@color/appWhite"
+            android:visibility="visible"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

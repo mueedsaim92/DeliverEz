@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="3dp"
+    android:background="@color/red"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="3dp"
+    app:cardMaxElevation="3dp">
+
+
+    <RelativeLayout
+        android:id="@+id/singleViewRL"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        android:background="@color/appWhite"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        >
+
+        <ImageView
+            android:id="@+id/productImgIV"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/johnny_depp"
+            android:background="@drawable/shape_grey_border"
+            android:padding="1dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/rightBtnLL"
+            android:layout_toRightOf="@+id/productImgIV"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            >
+
+            <TextView
+                android:id="@+id/nameTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="text"
+                android:textColor="@color/textColor"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:id="@+id/priceTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="price"
+                android:textColor="@color/textColor"
+                android:textSize="12sp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="10dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rightBtnLL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            >
+            <Button
+                android:id="@+id/editBT"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:text="Edit"
+                android:textAllCaps="false"
+                android:textSize="10sp"
+                android:textColor="@color/appTheme"
+                android:background="@drawable/shape_rec_theame"
+                />
+            <Button
+                android:id="@+id/deleteBT"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:text="Delete"
+                android:textSize="10sp"
+                android:textAllCaps="false"
+                android:layout_marginTop="14dp"
+                android:textColor="@color/appTheme"
+                android:background="@drawable/shape_rec_theame"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+

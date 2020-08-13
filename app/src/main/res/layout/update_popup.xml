@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@drawable/shape_btn_rec_solid_white"
+        >
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:text="Title"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/textColor"
+         />
+
+    <TextView
+        android:id="@+id/msgTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:text="Message Here"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/textColor"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:background="@color/appWhite"
+        >
+
+        <Button
+            android:id="@+id/cancelBT"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/shape_btn_rec_solid_white"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/appTheme"
+            android:textSize="14sp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="20dp"
+            />
+        <Button
+            android:id="@+id/updateBT"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/shape_btn_rec_solid_white"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Update"
+            android:textAllCaps="false"
+            android:textColor="@color/appTheme"
+            android:textSize="14sp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

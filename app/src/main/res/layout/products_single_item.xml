@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="3dp"
+    app:cardMaxElevation="3dp"
+    android:background="@color/red"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="12dp"
+    android:layout_marginLeft="12dp"
+    >
+        <!---->
+
+
+        <RelativeLayout
+            android:id="@+id/singleViewLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/appWhite"
+            >
+
+            <!--
+               grid items for RecyclerView
+               -->
+            <ImageView
+                android:id="@+id/imageViewRP"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_launcher"
+                />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/related_item_text_bg"
+
+                />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:maxLength="50"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="3dp"
+                android:text="text"
+                android:textColor="@color/appWhite"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+

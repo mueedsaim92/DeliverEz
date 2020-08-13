@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">DeliverEz</string>
+
+    //Methods
+    <string name="please_check_your_internet_connection">It seems you are not connected to internet, Please check your connection</string>
+    <string name="some_error_occurred">Some error occurred. Please try again.</string>
+    <string name="account_successfully">Your account has been created Successfully</string>
+
+    <string name="t_and_c">Term &amp; Condition</string>
+    <string name="support_and_hlp">Support &amp; Help</string>
+    <string name="web_view">Web View</string>
+
+    <string name="forgot_pswrd">Forgot Password? <u>Click here</u>.</string>
+    <string name="signup"><u>SignUp</u>.</string>
+
+    <string name="select">Select</string>
+
+    //Forgot Passwor
+    <string name="otp_TV1">Didn’t receive the OTP?</string>
+    <string name="msg_enter_forgot_mobile_number">Please enter valid mobile number.</string>
+    <string name="msg_enter_forgot_new_paswrd">Please Enter New Password</string>
+    <string name="msg_enter_forgot_otp">Enter valid OTP</string>
+
+</resources>

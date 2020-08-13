@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.deliverez.com">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="com.deliverez.com.init.DeliverezApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.deliverez.com.activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_Ors6Ha7hs6xYc6" />
+
+        <activity
+            android:name="com.deliverez.com.activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.deliverez.com.activity.SignUpActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.deliverez.com.activity.DashboardActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.deliverez.com.activity.ForgotPasswordActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.deliverez.com.activity.WebViewActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.deliverez.com.activity.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.deliverez.com.activity.MyProfileActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.deliverez.com.activity.EditProfileActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.deliverez.com.activity.SubCategoryActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.deliverez.com.activity.AddProductsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.deliverez.com.activity.AddServiceProductsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.deliverez.com.activity.RazorPaymentActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.deliverez.com.activity.AddRestaurantProductsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.deliverez.com.activity.OtpActivity"
+            android:screenOrientation="portrait" />
+
+
+
+    </application>
+
+</manifest>

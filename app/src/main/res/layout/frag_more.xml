@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity"
+    android:background="@color/superExtraLightGrey"
+    >
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:id="@+id/myProfileCL"
+       android:layout_width="match_parent"
+       android:layout_height="54dp"
+       android:layout_marginTop="12dp"
+       android:background="@color/appWhite">
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="0.5dp"
+          android:background="@color/view_layout_color"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <ImageView
+          android:layout_width="24dp"
+          android:layout_height="24dp"
+          android:layout_marginStart="25dp"
+          android:src="@drawable/profile_type"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="80dp"
+          android:text="My Profile"
+          android:textColor="@color/textColor"
+          android:textSize="14sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="0.5dp"
+          android:background="@color/view_layout_color"
+          app:layout_constraintBottom_toBottomOf="parent" />
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:id="@+id/changePasswordCL"
+       android:layout_width="match_parent"
+       android:layout_height="54dp"
+       android:layout_marginTop="20dp"
+       android:background="@color/appWhite">
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="0.5dp"
+          android:background="@color/view_layout_color"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <ImageView
+          android:id="@+id/signOutImageView"
+          android:layout_width="24dp"
+          android:layout_height="24dp"
+          android:layout_marginLeft="25dp"
+          android:src="@drawable/change_password"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+          android:id="@+id/signOutTv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="80dp"
+          android:text="Change Password"
+          android:textColor="@color/textColor"
+          android:textSize="14sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="0.5dp"
+          android:background="@color/view_layout_color"
+          app:layout_constraintBottom_toBottomOf="parent" />
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:id="@+id/faqCL"
+       android:layout_width="match_parent"
+       android:layout_height="54dp"
+       android:layout_marginTop="20dp"
+       android:background="@color/appWhite">
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="0.5dp"
+          android:background="@color/view_layout_color"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <ImageView
+          android:id="@+id/faqIV"
+          android:layout_width="24dp"
+          android:layout_height="24dp"
+          android:layout_marginLeft="25dp"
+          android:src="@drawable/faq"
+          android:tint="@color/darkTransparent"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+          android:id="@+id/versionTV"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="80dp"
+          android:text="FAQ"
+          android:textColor="@color/textColor"
+          android:textSize="14sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="0.5dp"
+          android:background="@color/view_layout_color"
+          app:layout_constraintBottom_toBottomOf="parent" />
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:id="@+id/supportAndHelpCL"
+       android:layout_width="match_parent"
+       android:layout_height="54dp"
+       android:layout_marginTop="20dp"
+       android:background="@color/appWhite">
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="0.5dp"
+          android:background="@color/view_layout_color"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <ImageView
+          android:layout_width="24dp"
+          android:layout_height="24dp"
+          android:layout_marginLeft="25dp"
+          android:src="@drawable/support"
+          android:tint="@color/darkTransparent"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="80dp"
+          android:text="@string/support_and_hlp"
+          android:textColor="@color/textColor"
+          android:textSize="14sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="0.5dp"
+          android:background="@color/view_layout_color"
+          app:layout_constraintBottom_toBottomOf="parent" />
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:id="@+id/termAndCondCL"
+       android:layout_width="match_parent"
+       android:layout_height="54dp"
+       android:layout_marginTop="20dp"
+       android:background="@color/appWhite">
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="0.5dp"
+          android:background="@color/view_layout_color"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <ImageView
+          android:layout_width="24dp"
+          android:layout_height="24dp"
+          android:layout_marginLeft="25dp"
+          android:src="@drawable/t_and_c"
+          android:tint="@color/darkTransparent"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="80dp"
+          android:text="@string/t_and_c"
+          android:textColor="@color/textColor"
+          android:textSize="14sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="0.5dp"
+          android:background="@color/view_layout_color"
+          app:layout_constraintBottom_toBottomOf="parent" />
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentViewLL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appWhite"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/logoIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/deleverez_login_logo" />
+
+    <LinearLayout
+        android:id="@+id/signInViewLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="12dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="42dp"
+        android:paddingRight="42dp">
+
+
+        <com.deliverez.com.widget.GradientTextView
+            android:id="@+id/signInTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:textAllCaps="true"
+            android:textColor="@color/extraDarkGrey"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <!--android:textColor="@color/loginViewDark"-->
+
+        <EditText
+            android:id="@+id/mobileET"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/login_edittext_shape"
+            android:hint="Mobile"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="10"
+            android:paddingLeft="14dp"
+            android:textColor="@color/extraDarkGrey"
+            android:textColorHint="@color/loginView"
+            android:textSize="15sp" />
+
+        <!--android:inputType="number"
+        android:maxLength="10"-->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/passwordET"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/login_edittext_shape"
+                    android:hint="Password"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:paddingLeft="14dp"
+                    android:textColor="@color/extraDarkGrey"
+                    android:textColorHint="@color/loginView"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/hideAndShowPswdIV"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/eye"
+                    android:tint="@color/loginView" />
+
+            </RelativeLayout>
+
+
+        </FrameLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:visibility="gone">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Keep me logged in."
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+
+
+        <Button
+            android:id="@+id/loginBT"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/login_button_shape"
+            android:paddingLeft="52dp"
+            android:paddingRight="52dp"
+            android:text="Login"
+            android:textAllCaps="true"
+            android:textColor="@color/appWhite"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/forgotPasswordTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/contactUsTV"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="2dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingBottom="3dp"
+            android:text="@string/forgot_pswrd"
+            android:textColor="@color/extraDarkGrey"
+            android:textSize="10sp"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/signUpLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="6dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="3dp"
+            android:text="Dont have an account?  "
+            android:textColor="@color/extraDarkGrey"
+            android:textSize="10sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="4dp"
+            android:text="@string/signup"
+            android:textColor="@color/extraDarkGrey"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</RelativeLayout>

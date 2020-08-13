@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appWhite"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/appTheme"
+        android:elevation="1dp"
+        android:gravity="center"
+        app:layout_scrollFlags="scroll|enterAlways|snap">
+
+        <TextView
+            android:id="@+id/toolbarCenterTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingRight="65dp"
+            android:text="SignUp"
+            android:textAllCaps="true"
+            android:textColor="@color/appWhite"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/appGrey" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/editProfileRL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp">
+
+            <RelativeLayout
+                android:id="@+id/defaultImageRR"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/shape_oval_transparent_with_orange">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/defaultImageIV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:padding="1dp"
+                    android:src="@drawable/default_profile"
+                    android:tint="@color/appTheme" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/selectImageIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/defaultImageRR"
+                android:layout_centerHorizontal="true"
+                android:padding="7dp"
+                android:src="@drawable/camera"
+                android:tint="@color/grey"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:focusable="false"
+            android:focusableInTouchMode="true">
+
+
+            <EditText
+                android:id="@+id/gameNameET"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/shape_rec_theame"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@color/textColor"
+                android:textSize="15sp"
+                android:hint="Name"
+                android:textColorHint="@color/greyLight"
+                />
+
+            <EditText
+                android:id="@+id/gameShortNameET"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/shape_rec_theame"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@color/textColor"
+                android:textSize="15sp"
+                android:hint="Shop Name"
+                android:textColorHint="@color/greyLight"
+                />
+
+            <EditText
+                android:id="@+id/shopAddressET"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/shape_rec_theame"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@color/textColor"
+                android:textSize="15sp"
+                android:hint="Shop Address"
+                android:textColorHint="@color/greyLight"
+                />
+
+            <EditText
+                android:id="@+id/mobileET"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/shape_rec_theame"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@color/textColor"
+                android:textSize="15sp"
+                android:maxLength="10"
+                android:inputType="number"
+                android:hint="Mobile"
+                android:textColorHint="@color/greyLight"
+                />
+
+
+            <EditText
+                android:id="@+id/emailET"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/shape_rec_theame"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@color/textColor"
+                android:textSize="15sp"
+                android:inputType="textEmailAddress"
+                android:hint="Email"
+                android:textColorHint="@color/greyLight"
+                />
+
+            <EditText
+                android:id="@+id/passwordET"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/shape_rec_theame"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@color/textColor"
+                android:textSize="15sp"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:textColorHint="@color/greyLight"
+                />
+
+            <TextView
+                android:id="@+id/shopOpeningTimeTV"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/shape_rec_theame"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:text="Shop Opening Time"
+                android:textColor="@color/greyLight"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:id="@+id/shopClosingTimeTV"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/shape_rec_theame"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:text="Shop Closing Time"
+                android:textColor="@color/greyLight"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="8dp"
+                android:text="Choose Category"
+                android:textColor="@color/textColor"
+                android:textSize="15sp"
+                 />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id = "@+id/categoryRV"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop="0dp"
+                />
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="12dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NOTE : "
+                    android:textAllCaps="true"
+                    android:textColor="@color/red"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time format will be 24 hour."
+                    android:textColor="@color/grey"
+                    android:textSize="10sp" />
+            </LinearLayout>-->
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/saveBT"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/enable_button_shape"
+            android:text="Process"
+            android:textColor="@color/appWhite" />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

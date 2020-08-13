@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentViewLL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appWhite"
+    android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayoutCheckout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextPayment"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:background="@drawable/login_edittext_shape"
+                android:padding="3dp"
+                android:hint="20.00"
+                android:gravity="center"
+                android:textColorHint="@color/greyLight"
+                android:textSize="25sp"
+                android:layout_marginTop="24dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Type Payment what you are paying?" />
+
+            <Button
+                android:id="@+id/buttonConfirmOrder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:background="#007200"
+                android:text="Confirm Order"
+                android:textColor="#ffffff"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+
+</RelativeLayout>

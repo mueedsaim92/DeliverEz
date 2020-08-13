@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#900338</color>
+    <!--<color name="colorPrimaryDark">#900338</color>-->
+    <color name="colorPrimaryDark">#570324</color>
+    <color name="colorAccent">#900338</color>
+
+
+    <!--<color name="appTheme">#900338</color>-->
+    <color name="appTheme">#f04a32</color>
+    <color name="red">#CE213F</color>
+    <color name="loginView">#E6573B</color>
+    <color name="loginViewDark">#CE213F</color>
+    <!--<color name="editTextHint">#900338</color>-->
+    <color name="editTextHint">#B2F04A32</color>
+    <color name="lightTheme">#97F04A32</color>
+    <color name="extraLightAppTheme">#1E900338</color>
+    <color name="toolbarColor">#9F863C</color>
+    <color name="appWhite">#FFFFFF</color>
+    <color name="appBlack">#000000</color>
+    <color name="darkTransparent">#52000000</color>
+    <color name="extraDarkGrey">#010101</color>
+    <color name="darkGrey">#463b1c</color>
+    <color name="appGrey">#D1D1D1</color>
+    <color name="view_layout_color">#E3E1E3</color>
+    <color name="lightGrey">#E3E1E3</color>
+    <color name="superExtraLightGrey">#48F1F1F1</color>
+    <color name="white_text_color">#ffffff</color>
+    <color name="green_text_color">#008F4F</color>
+    <color name="lightGreen">#46008F4F</color>
+    <color name="brown_text_color">#9F863C</color>
+    <color name="bottom_layout_color">#9F863C</color>
+
+    <color name="textColor">#191D20</color>
+    <color name="grey">#525245</color>
+    <color name="greyLight">#6E6E6E</color>
+    <color name="textLightColor">#616468</color>
+    <color name="extraLightYellow">#83D5C8A4</color>
+    <color name="lightYellow">#D5C8A4</color>
+    <color name="darkYellow">#927F45</color>
+    <color name="transparent_background">#80000000</color>
+</resources>
